@@ -89,3 +89,55 @@ function transferShoppingBasketToLocalStorage() {
     localStorage.setItem('cart', JSON.stringify(shoppingBasket))
 }
 
+
+
+// modal offer popup
+const modalEl = document.querySelector('.modal')
+const inputEl = document.querySelector('.input')
+const closeBtn = document.querySelector('.close-btn')
+
+function displayModal() {
+    modalEl.classList.add('visible')
+}
+
+function hideModal() {
+    modalEl.classList.remove('visible')
+}
+
+window.onload = () => {
+    setTimeout(displayModal, 2000)
+}
+
+closeBtn.addEventListener('click', hideModal)
+
+inputEl.addEventListener('click', () => {
+    inputEl.placeholder = ''
+})
+
+inputEl.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+        e.preventDefault()
+        sendDiscount()
+    }
+})
+
+function sendDiscount() {
+    const divContent = document.createElement('div')
+    divContent.classList.add('content')
+    
+
+   const div = document.createElement('div')
+   div.classList.add('close-btn')
+   const icon = document.createElement('i')
+   icon.classList.add('bi', 'bi-x')
+   div.appendChild(icon)
+
+   const h3 = document.createElement('h3')
+   h3.innerText = 'Thank you! Your discount will arrive shortly!'
+   divContent.appendChild(h3)
+   divContent.appendChild(div)
+   
+   modalEl.innerHTML = ''
+   modalEl.appendChild(divContent)
+   document.querySelector('.close-btn').addEventListener('click', hideModal)
+}
