@@ -10,7 +10,7 @@ let shopProductsData = [
         id: 2,
         name: 'Mountain Bear',
         price: 25,
-        description: 'Mountain landscape with bear tshirt',
+        description: 'Mountain landscape bear t',
         img: 'images/bear.png'
 
     }, 
@@ -46,14 +46,14 @@ let shopProductsData = [
         id: 7,
         name: 'Raven T',
         price: 23,
-        description: 'Classic fit white raven logo T',
+        description: 'Classic fit raven logo T',
         img: 'images/raven.png'
     },
     {
         id: 8,
-        name: 'Element of Surprise T',
+        name: 'Element of Surprise',
         price: 27,
-        description: 'Classic fit navy geek logo T',
+        description: 'Classic fit geek logo T',
         img: 'images/surprise.png'
     }
 ]

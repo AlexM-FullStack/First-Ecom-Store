@@ -42,7 +42,7 @@ body {
 
 .shop {
     display: grid;
-    grid-template-columns: repeat(4, 350px);
+    grid-template-columns: repeat(4, 250px);
     gap: 25px;
     justify-content: center;
     margin: 40px 0;
@@ -63,6 +63,7 @@ body {
     flex-direction: column;
     padding: 10px;
     gap: 10px;
+    flex-grow: 1;
 }
 
 .details h3 {
@@ -77,7 +78,7 @@ body {
 .price-quantity {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 }
 
 .price-quantity h2 {
@@ -97,18 +98,18 @@ body {
     letter-spacing: 1px;
     color: whitesmoke;
     text-transform: uppercase;
-    padding: 5px;  
+    padding: 2px;  
     cursor: pointer;  
 }
 
 .increase{
     background-color: crimson;   
-    width: 100px;
+    width: 50px;
 }
 
 .decrease {
     background-color: blue;
-    width: 100px;
+    width: 80px;
 }
 
 .quantity {

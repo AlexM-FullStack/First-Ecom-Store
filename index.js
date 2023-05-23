@@ -14,7 +14,7 @@ function renderShopItems(data) {
        
        const imgEl = document.createElement('img')
        imgEl.src = `./${img}`
-       imgEl.width = 350
+       imgEl.width = 250
        itemEl.appendChild(imgEl)
 
        const detailsDiv = document.createElement('div')
